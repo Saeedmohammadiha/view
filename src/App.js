@@ -9,9 +9,6 @@ import Chart from './Chart';
 import { LineChart } from './LineChart';
 import ControlledAccordions from './ControlledAccordions';
 
-
-
-
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -67,23 +64,19 @@ export default function App() {
         textColor="primary"
         centered
       >
-        <Tab label="استان" {...a11yProps(0)}/>
-        <Tab label="ناحیه" {...a11yProps(1)}/>
-        <Tab label="برچسب ها" {...a11yProps(2)}/>
-       
-    
+        <Tab label="استان" {...a11yProps(0)} />
+        <Tab label="ناحیه" {...a11yProps(1)} />
+        <Tab label="برچسب ها" {...a11yProps(2)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-        <Chart/>
+        <Chart />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <LineChart/>
+        <LineChart />
       </TabPanel>
       <TabPanel value={value} index={2}>
-       <ControlledAccordions/>
+        <ControlledAccordions />
       </TabPanel>
-     
-
     </Paper>
   );
 }
