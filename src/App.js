@@ -8,7 +8,6 @@ import PropTypes from 'prop-types';
 import Chart from './Chart';
 import { LineChart } from './LineChart';
 import ControlledAccordions from './ControlledAccordions';
-import BasicGrouping from './BasicGrouping';
 
 
 
